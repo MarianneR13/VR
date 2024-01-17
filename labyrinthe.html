@@ -1,0 +1,265 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+
+  <body>
+
+    <a-scene>
+
+      <a-assets>
+        <img id="sol" src="./moquette.jpg">
+        <img id="mur" src="./papier_peint.jpg">
+      </a-assets>
+
+      <!-- face -->
+      <a-plane position="-0.25 1 -2" 
+               rotation="0 0 0" 
+               width="3.5" height="2" 
+               side="double"
+               src="#mur" repeat="4 2">
+      </a-plane>
+
+      <!-- droite -->
+      <a-plane position="2 1 0" 
+               rotation="0 90 0" 
+               width="4" height="2" 
+               side="double"
+               src="#mur" repeat="4 2">
+      </a-plane>
+
+      <!-- derrière -->
+      <a-plane position="0 1 2" 
+               rotation="0 0 0" 
+               width="4" height="2" 
+               side="double"
+               src="#mur" repeat="4 2">
+      </a-plane>
+
+      <!-- gauche -->
+      <a-plane position="-2 1 0" 
+               rotation="0 90 0" 
+               width="4" height="2" 
+               side="double"
+               src="#mur" repeat="4 2">
+      </a-plane>
+
+      <!-- murs rotation y à 90 -->
+      <a-plane position="-1.5 1 -0.5" 
+               rotation="0 90 0" 
+               width="2" height="2" 
+               side="double"
+               src="#mur" repeat="2 2">
+      </a-plane>
+
+      <a-plane position="-1.5 1 1.25" 
+               rotation="0 90 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane>
+
+      <a-plane position="-0.5 1 1.25" 
+               rotation="0 90 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane>     
+      
+      <a-plane position="-1 1 1.75" 
+               rotation="0 90 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="0.5 1 1.5" 
+               rotation="0 90 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="0 1 1" 
+               rotation="0 90 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="1 1 1" 
+               rotation="0 90 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="1.5 1 0.75" 
+               rotation="0 90 0" 
+               width="1.5" height="2" 
+               side="double"
+               src="#mur" repeat="1.5 2">
+      </a-plane> 
+
+      <a-plane position="1.5 1 -0.75" 
+               rotation="0 90 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="1 1 -0.5" 
+               rotation="0 90 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="0.5 1 -1.5" 
+               rotation="0 90 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="0.5 1 -0.25" 
+               rotation="0 90 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="0 1 -1" 
+               rotation="0 90 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="-0.5 1 -1.75" 
+               rotation="0 90 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="-1 1 -1.25" 
+               rotation="0 90 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="-0.5 1 -0.25" 
+               rotation="0 90 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <!-- murs rotation y à 0 -->
+      <a-plane position="1.5 1 -1.5" 
+               rotation="0 0 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="1.75 1 -0.5" 
+               rotation="0 0 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="1.25 1 0" 
+               rotation="0 0 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="1.25 1 1.5" 
+               rotation="0 0 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="0.75 1 -1" 
+               rotation="0 0 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="0.25 1 -0.5" 
+               rotation="0 0 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="-0.25 1 0.5" 
+               rotation="0 0 0" 
+               width="2.5" height="2" 
+               side="double"
+               src="#mur" repeat="2.5 2">
+      </a-plane> 
+
+      <a-plane position="-0.25 1 1.5" 
+               rotation="0 0 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="-1 1 1" 
+               rotation="0 0 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="-0.75 1 0" 
+               rotation="0 0 0" 
+               width="0.5" height="2" 
+               side="double"
+               src="#mur" repeat="0.5 2">
+      </a-plane> 
+
+      <a-plane position="-1 1 -0.5" 
+               rotation="0 0 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <a-plane position="-0.5 1 -1" 
+               rotation="0 0 0" 
+               width="1" height="2" 
+               side="double"
+               src="#mur" repeat="1 2">
+      </a-plane> 
+
+      <!-- sol -->
+      <a-plane position="0 0 0" 
+               rotation="-90 0 0" 
+               width="4" height="4" 
+               src="#sol" repeat="4 4"></a-plane>>
+      </a-plane>
+
+      <a-plane position="0 2 0" 
+               rotation="-90 0 0" 
+               width="4" height="4" 
+               side="double"
+               color="#E1CE97" repeat="4 4"></a-plane>>
+      </a-plane>
+
+      <a-sky color="black"></a-sky>
+
+    </a-scene>
+
+  </body>
+
+</html>
