@@ -1,0 +1,164 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+
+    <a-scene>
+
+        <a-assets>
+
+          <a-mixin id="mur" geometry="primitive: plane; height: 2" material="side:double; src: #papier_peint" ></a-mixin>
+          <a-mixin id="mur_2" geometry="primitive: plane; height: 2" material="side:double; src: #papier_peint_2" ></a-mixin>
+          <a-mixin id="mur_3" geometry="primitive: plane; height: 2" material="side:double; src: #papier_peint_3" ></a-mixin>
+          <a-mixin id="mur_4" geometry="primitive: plane; height: 2" material="side:double; src: #papier_peint_4" ></a-mixin>
+
+          <a-mixin id="largeur_1" geometry="width: 0.5" material="repeat: 0.5 2"></a-mixin>
+          <a-mixin id="largeur_2" geometry="width: 1" material="repeat: 1 2"></a-mixin>
+          <a-mixin id="largeur_3" geometry="width: 1.5" material="repeat: 1.5 2"></a-mixin>
+          <a-mixin id="largeur_4" geometry="width: 2" material="repeat: 2 2"></a-mixin>
+
+          <a-mixin id="bonhomme" geometry="primitive: plane; height: 2; width: 0.5" material="repeat: 1 1" ></a-mixin>
+          <a-mixin id="double" material="side:double" ></a-mixin>
+
+          <img id="bonhomme_1" src="./bonhomme_1.png">
+          <img id="bonhomme_2" src="./bonhomme_2.png">
+          <img id="bonhomme_3" src="./bonhomme_3.png">
+          <img id="bonhomme_4" src="./bonhomme_4.png">
+          <img id="bonhomme_5" src="./bonhomme_5.png">
+          <img id="bonhomme_colere" src="./bonhomme_colere.png">
+          <img id="bonhomme_fin" src="./bonhomme_fin.png">
+
+          <img id="papier_peint" src="./papier_peint.jpg">
+          <img id="papier_peint_2" src="./papier_peint_2.jpg">
+          <img id="papier_peint_3" src="./papier_peint_3.jpg">
+          <img id="papier_peint_4" src="./papier_peint_4.jpg">
+          <img id="sol" src="./moquette.jpg">
+
+        </a-assets>
+
+            <!-- murs rotation y à 0 -->
+        <!-- 1 -->
+        <a-entity position="1.5 1 -1.5" mixin="largeur_2 mur_4"></a-entity>
+        <!-- 2 -->
+        <a-entity position="0.75 1 -1" mixin="largeur_1 mur_4"></a-entity>
+        <!-- 3 -->
+        <a-entity position="1.75 1 -0.5" mixin="largeur_1 mur_2"></a-entity>
+        <!-- 4 -->
+        <a-entity position="1.25 1 0" mixin="largeur_1 mur_4"></a-entity>
+        <!-- 5 -->
+        <a-entity position="1.25 1 1.5" mixin="largeur_1 mur_3"></a-entity>
+        <!-- 6 -->
+        <a-entity position="0.25 1 0.5" mixin="largeur_3 mur_2"></a-entity>
+        <!-- 7 -->
+        <a-entity position="-1 1 0.5" mixin="largeur_2 mur_2"></a-entity>
+        <!-- 8 -->
+        <a-entity position="-0.25 1 1.5" mixin="largeur_1 mur"></a-entity>
+        <!-- 9 -->
+        <a-entity position="-1 1 1" mixin="largeur_2 mur"></a-entity>
+        <!-- 10 -->
+        <a-entity position="-0.75 1 0" mixin="largeur_1 mur_4"></a-entity>
+        <!-- 11 -->
+        <a-entity position="-1 1 -0.5" mixin="largeur_2 mur_3"></a-entity>
+        <!-- 12 -->
+        <a-entity position="-0.5 1 -1" mixin="largeur_2 mur_4"></a-entity>
+        <!-- 13 -->
+        <a-entity position="0.25 1 -0.5" mixin="largeur_1 mur_3"></a-entity>
+
+            <!-- murs rotation y à 90 -->
+        <!-- 1 -->
+        <a-entity position="1.5 1 -0.75" rotation="0 90 0" mixin="largeur_1 mur"></a-entity>
+        <!-- 2 -->
+        <a-entity position="1.5 1 0.75" rotation="0 90 0" mixin="largeur_3 mur_4"></a-entity>
+        <!-- 3 -->
+        <a-entity position="1 1 -0.5" rotation="0 90 0" mixin="largeur_2 mur_4"></a-entity>
+        <!-- 4 -->
+        <a-entity position="1 1 1" rotation="0 90 0" mixin="largeur_2 mur_3"></a-entity>
+        <!-- 5 -->
+        <a-entity position="0.5 1 -1.5" rotation="0 90 0" mixin="largeur_2 mur_2"></a-entity>
+        <!-- 6 -->
+        <a-entity position="0.5 1 -0.25" rotation="0 90 0" mixin="largeur_1 mur"></a-entity>
+        <!-- 7 -->
+        <a-entity position="0.5 1 1.5" rotation="0 90 0" mixin="largeur_2 mur_4"></a-entity>
+        <!-- 8 -->
+        <a-entity position="0 1 -1" rotation="0 90 0" mixin="largeur_2 mur_3"></a-entity>
+        <!-- 9 -->
+        <a-entity position="0 1 1" rotation="0 90 0" mixin="largeur_2 mur_3"></a-entity>
+        <!-- 10 -->
+        <a-entity position="-0.5 1 -1.75" rotation="0 90 0" mixin="largeur_1 mur_2"></a-entity>
+        <!-- 11 -->
+        <a-entity position="-0.5 1 -0.25" rotation="0 90 0" mixin="largeur_1 mur_3"></a-entity>
+        <!-- 12 -->
+        <a-entity position="-0.5 1 1.25" rotation="0 90 0" mixin="largeur_1 mur_3"></a-entity>
+        <!-- 13 -->
+        <a-entity position="-1 1 -1.25" rotation="0 90 0" mixin="largeur_1 mur_2"></a-entity>
+        <!-- 14 -->
+        <a-entity position="-1 1 1.75" rotation="0 90 0" mixin="largeur_1 mur_3"></a-entity>
+        <!-- 15 -->
+        <a-entity position="-1.5 1 -0.5" rotation="0 90 0" mixin="largeur_4 mur_3"></a-entity>
+        <!-- 16 -->
+        <a-entity position="-1.5 1 1.25" rotation="0 90 0" mixin="largeur_1 mur_4"></a-entity>
+
+            <!-- murs extérieurs -->
+        <!-- gauche -->
+        <a-entity position="-2 1 -1" rotation="0 90 0" mixin="largeur_4 mur_3"></a-entity>
+        <a-entity position="-2 1 1" rotation="0 90 0" mixin="largeur_4 mur_4"></a-entity>
+        <!-- droite -->
+        <a-entity position="2 1 -1" rotation="0 90 0" mixin="largeur_4 mur_2"></a-entity>
+        <a-entity position="2 1 1" rotation="0 90 0" mixin="largeur_4 mur_2"></a-entity>
+        <!-- derrière -->
+        <a-entity position="-1 1 2" mixin="largeur_4 mur_4"></a-entity>
+        <a-entity position="1 1 2" mixin="largeur_4 mur_4"></a-entity>
+        <!-- devant -->
+        <a-entity position="-1 1 -2"  mixin="largeur_4 mur_3"></a-entity>
+        <a-entity position="0.75 1 -2" mixin="largeur_3 mur_3"></a-entity>
+
+        <!-- sol -->
+        <a-plane position="0 0 0" 
+                rotation="-90 0 0" 
+                width="4" height="4" 
+                src="#sol" repeat="4 4"></a-plane>>
+        </a-plane>
+
+        <!-- plafond -->
+        <a-plane position="0 2 0" 
+                rotation="-90 0 0" 
+                width="4" height="4" 
+                side="double"
+                src="#sol" repeat="4 4"></a-plane>>
+        </a-plane>
+
+        <!-- bonhomme 1 -->
+        <a-entity position="0 1 -0.4" rotation="0 0 0" mixin="bonhomme" material="src: #bonhomme_1; transparent: true"></a-entity>
+
+        <!-- bonhomme 2 -->
+        <a-entity position="-1.5 1 0.75" rotation="0 90 0" mixin="bonhomme" material="src: #bonhomme_3; transparent: true"></a-entity>
+        <a-entity position="-1.5 1 0.75" rotation="0 -90 0" mixin="bonhomme" material="src: #bonhomme_2; transparent: true"></a-entity>
+
+        <!-- bonhomme 3 -->
+        <a-entity position="-1.1 1 1.75" rotation="0 -90 0" mixin="bonhomme" material="src: #bonhomme_2; transparent: true"></a-entity>
+
+        <!-- bonhomme 4 -->
+        <a-entity position="-0.75 1 1.9" rotation="0 180 0" mixin="bonhomme" material="src: #bonhomme_4; transparent: true"></a-entity>
+
+        <!-- bonhomme 5 -->
+        <a-entity position="0.25 1 0.6" rotation="0 0 0" mixin="bonhomme" material="src: #bonhomme_colere; transparent: true"></a-entity>
+
+        <!-- bonhomme 6 -->
+        <a-entity position="1.75 1 -3" rotation="0 0 0" mixin="bonhomme" material="src: #bonhomme_fin; transparent: true"></a-entity>
+
+        <!-- bonhomme 7 -->
+        <a-entity position="1.9 1 1.75" rotation="0 -90 0" mixin="bonhomme" material="src: #bonhomme_colere; transparent: true"></a-entity>
+
+        <!-- bonhomme 8 -->
+        <a-entity position="1.25 1 -1.4" rotation="0 0 0" mixin="bonhomme" material="src: #bonhomme_colere; transparent: true"></a-entity>
+
+        <!-- bonhomme 9 -->
+        <a-entity position="0 1 -1.9" rotation="0 0 0" mixin="bonhomme" material="src: #bonhomme_5; transparent: true"></a-entity>
+
+        <a-sky color="black"></a-sky>
+
+      </a-scene>
+
+  </body>
+</html>
