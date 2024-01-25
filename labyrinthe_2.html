@@ -18,7 +18,7 @@
           <a-mixin id="largeur_3" geometry="width: 1.5" material="repeat: 1.5 2"></a-mixin>
           <a-mixin id="largeur_4" geometry="width: 2" material="repeat: 2 2"></a-mixin>
 
-          <a-mixin id="bonhomme" geometry="primitive: plane; height: 2; width: 0.5" material="repeat: 1 1" ></a-mixin>
+          <a-mixin id="bonhomme" geometry="primitive: plane; height: 2; width: 0.9" material="repeat: 1 1" ></a-mixin>
           <a-mixin id="double" material="side:double" ></a-mixin>
 
           <img id="bonhomme_1" src="./bonhomme_1.png">
@@ -155,6 +155,8 @@
 
         <!-- bonhomme 9 -->
         <a-entity position="0 1 -1.9" rotation="0 0 0" mixin="bonhomme" material="src: #bonhomme_5; transparent: true"></a-entity>
+
+        <a-entity camera look-controls wasd-controls="acceleration:10" position="0 1.6 0"></a-entity>
 
         <a-sky color="black"></a-sky>
 
