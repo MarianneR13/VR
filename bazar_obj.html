@@ -7,175 +7,169 @@
 
         <a-assets>
             <!-- mixins murs -->
-            <a-mixin id="mur" geometry="primitive: plane; height: 4; width: 4" material="side:double; src: #papier_peint" ></a-mixin>
+            <a-mixin id="mur" geometry="primitive: plane; height: 3; width: 4" material="src: #papier_peint" ></a-mixin>
+            <a-mixin id="mur_ext" geometry="primitive: plane; height: 3; width: 4" material="color:#480b0b" ></a-mixin>
+            <!-- mixins sol -->
+            <a-mixin id="sol" geometry="primitive: plane; height: 4; width: 4" material="side:double; src: #parquet; repeat:4 4" ></a-mixin>
+            <!-- mixins plafond -->
+            <a-mixin id="plafond" geometry="primitive: plane; height: 4; width: 4" material="side:double; src: #plafond_img" ></a-mixin>
             <!-- mixins murs porte -->
-            <a-mixin id="plane_porte" geometry="primitive: plane; height: 2.5; width: 1.25" material="src: #porte; transparent: true" ></a-mixin>
+            <a-mixin id="plane_porte" geometry="primitive: plane; height: 2.5; width: 1.25" material="transparent: true" ></a-mixin>
             <a-mixin id="plane_contour_porte" geometry="primitive: plane; height: 2.5; width: 1.25" material="side:double; src: #contour_porte; transparent: true" ></a-mixin>
-            <a-mixin id="mur_cote" geometry="primitive: plane; height: 4; width: 1.375" material="side:double; src: #papier_peint" ></a-mixin>
-            <a-mixin id="mur_haut" geometry="primitive: plane; height: 1.5; width: 1.25" material="side:double; src: #papier_peint" ></a-mixin>
-
-
-            <!-- lit -->
-            <a-asset-item id="obj_lit" src="./bazar/lit/10229_Four_Poster_Bed_Double_v1_max2010_iteration-1.obj"></a-asset-item>
-            <a-asset-item id="mtl_lit" src="./bazar/lit/10229_Four_Poster_Bed_Double_v1_max2010_iteration-1.mtl"></a-asset-item>
-
-            <!-- voiture -->
-            <a-asset-item id="obj_voiture" src="./bazar/voiture/10609_toy_race_car_SG_v1_Iterations-2.obj"></a-asset-item>
-            <a-asset-item id="mtl_voiture" src="./bazar/voiture/10609_toy_race_car_SG_v1_Iterations-2.mtl"></a-asset-item>
-
-            <!-- bus -->
-            <a-asset-item id="obj_bus" src="./bazar/bus/13936_Tourist_Bus_with_Open_Top_v2_L1.obj"></a-asset-item>
-            <a-asset-item id="mtl_bus" src="./bazar/bus/13936_Tourist_Bus_with_Open_Top_v2_L1.mtl"></a-asset-item>
-
-            <!-- tapis de course -->
-            <a-asset-item id="obj_tapis_course" src="./bazar/tapis_course/Treadmill OBJ.obj"></a-asset-item>
-            <a-asset-item id="mtl_tapis_course" src="./bazar/tapis_course/Treadmill OBJ.mtl"></a-asset-item>
-
-            <!-- train -->
-            <a-asset-item id="obj_train" src="./bazar/train/11709_train_v1_L3.obj"></a-asset-item>
-            <a-asset-item id="mtl_train" src="./bazar/train/11709_train_v1_L3.mtl"></a-asset-item>
-
-            <!-- escalier -->
-            <a-asset-item id="obj_escalier" src="./bazar/escalier/14326_Straight_Stair_with_Right-Side_Banister-Honey_v1_l1.obj"></a-asset-item>
-            <a-asset-item id="mtl_escalier" src="./bazar/escalier/14326_Straight_Stair_with_Right-Side_Banister-Honey_v1_l1.mtl"></a-asset-item>
+            <a-mixin id="mur_cote" geometry="primitive: plane; height: 3; width: 1.375" material="src: #papier_peint; repeat: 1 1.375" ></a-mixin>
+            <a-mixin id="mur_haut" geometry="primitive: plane; height: 0.5; width: 1.25" material="src: #papier_peint; repeat: 1 0.5" ></a-mixin>
+            <a-mixin id="mur_cote_ext" geometry="primitive: plane; height: 3; width: 1.375" material="color:#480b0b; repeat: 1 1.375" ></a-mixin>
+            <a-mixin id="mur_haut_ext" geometry="primitive: plane; height: 0.5; width: 1.25" material="color:#480b0b; repeat: 1 0.5" ></a-mixin>
+            <!-- mixins piles de feuilles -->
+            <a-mixin id="pile_box" geometry="primitive: box; height: 2.5; width: 0.5; depth: 0.5" material="side:double; src: #pile_feuille; repeat: 1 2.5" ></a-mixin>
+            <a-mixin id="pile_box_2" geometry="primitive: box; height: 1.5; width: 0.5; depth: 0.5" material="side:double; src: #pile_feuille_2; repeat: 1 1.5; transparent: true" ></a-mixin>
+            <a-mixin id="pile_box_3" geometry="primitive: box; height: 1; width: 0.4; depth: 0.4" material="side:double; src: #pile_feuille_3; repeat: 1 1; transparent: true" ></a-mixin>
+            <a-mixin id="pile_box_4" geometry="primitive: box; height: 2; width: 0.4; depth: 0.4" material="side:double; src: #pile_feuille; repeat: 1 2" ></a-mixin>
+            <a-mixin id="pile_box_5" geometry="primitive: box; height: 1.7; width: 0.5; depth: 0.5" material="side:double; src: #pile_feuille; repeat: 1 1.7" ></a-mixin>
 
             <!-- lampe -->
-            <a-asset-item id="obj_lampe" src="./bazar/lampe/11832_Lamp_v1_l2.obj"></a-asset-item>
-            <a-asset-item id="mtl_lampe" src="./bazar/lampe/11832_Lamp_v1_l2.mtl"></a-asset-item>
+            <a-asset-item id="obj_lampe" src="./modeles/bazar/lampe/11832_Lamp_v1_l2.obj"></a-asset-item>
+            <a-asset-item id="mtl_lampe" src="./modeles/bazar/lampe/11832_Lamp_v1_l2.mtl"></a-asset-item>
 
-            <!-- appareil photo -->
-            <a-asset-item id="obj_appareil_photo" src="./bazar/appareil_photo/10124_SLR_Camera_SG_V1_Iteration2.obj"></a-asset-item>
-            <a-asset-item id="mtl_appareil_photo" src="./bazar/appareil_photo/10124_SLR_Camera_SG_V1_Iteration2.mtl"></a-asset-item>
+            <!-- bureau -->
+            <a-asset-item id="obj_bureau" src="./modeles/bazar/bureau/10240_Office_Desk_v3_max2011.obj"></a-asset-item>
+            <a-asset-item id="mtl_bureau" src="./modeles/bazar/bureau/10240_Office_Desk_v3_max2011.mtl"></a-asset-item>
 
-            <!-- tortue -->
-            <a-asset-item id="obj_tortue" src="./bazar/tortue/13103_pearlturtle_v1_l2.obj"></a-asset-item>
-            <a-asset-item id="mtl_tortue" src="./bazar/tortue/13103_pearlturtle_v1_l2.mtl"></a-asset-item> 
+            <!-- fauteuil -->
+            <a-asset-item id="obj_fauteuil" src="./modeles/bazar/fauteuil/12283_Chair_v1_L3.obj"></a-asset-item>
+            <a-asset-item id="mtl_fauteuil" src="./modeles/bazar/fauteuil/12283_Chair_v1_L3.mtl"></a-asset-item>
 
-            <!-- poisson -->
-            <a-asset-item id="obj_poisson" src="./bazar/poisson/13012_Orange_Lined_Cardinalfish_v1_l3.obj"></a-asset-item>
-            <a-asset-item id="mtl_poisson" src="./bazar/poisson/13012_Orange_Lined_Cardinalfish_v1_l3.mtl"></a-asset-item> 
+            <!-- image piles de papier -->
+            <img id="pile_feuille" src="./modeles/bazar/pile_2.webp">
+            <img id="pile_feuille_2" src="./modeles/bazar/pile_1.png">
+            <img id="pile_feuille_3" src="./modeles/bazar/pile_3.png">
 
-        
             <!-- image papier peint -->
-            <img id="papier_peint" src="./bazar/papier_peint.jpeg">
+            <img id="papier_peint" src="./modeles/bazar/bibliotheque_2.jpg">
+
+            <!-- image plafond -->
+            <img id="plafond_img" src="./modeles/bazar/plafond.jpeg">
+
+            <!-- image parquet -->
+            <img id="parquet" src="./modeles/bazar/parquet.webp">
 
             <!-- image porte -->
-            <img id="porte" src="./bazar/porte/porte.png">
+            <img id="porte" src="./modeles/bazar/porte/porte.png">
+            <img id="porte_sens" src="./modeles/bazar/porte/porte_sens.png">
             <!-- image contour de porte -->
-            <img id="contour_porte" src="./bazar/porte/contour_porte.png">
+            <img id="contour_porte" src="./modeles/bazar/porte/contour_porte.png">
         </a-assets>
-          
-        <!-- lit -->
-        <a-entity 
-            position="-1 0 -2.5" scale="0.008 0.008 0.008" rotation="-90 90 0"
-            obj-model="obj: #obj_lit; mtl: #mtl_lit">
-        </a-entity>
 
-        <!-- voiture -->
-        <a-entity 
-            position="0 -0.01 -3.5" scale="0.3 0.3 0.3" rotation="-90 0 90"
-            obj-model="obj: #obj_voiture; mtl: #mtl_voiture">
-        </a-entity>
 
-        <!-- voiture 2 -->
+        <!-- lampe -->
         <a-entity 
-            position="0.8 1.8 -3.2" scale="0.3 0.3 0.3" rotation="40 180 0"
-            obj-model="obj: #obj_voiture; mtl: #mtl_voiture">
-        </a-entity>
-
-        <!-- bus -->
-         <a-entity 
-            position="0 2.86 -3.24" scale="0.0025 0.0025 0.0025" rotation="-90 0 -30"
-            obj-model="obj: #obj_bus; mtl: #mtl_bus">
-        </a-entity>
-
-        <!-- tapis de course -->
-        <a-entity 
-            position="-1.6 0 -1.25" scale="0.05 0.05 0.05" rotation="0 90 0"
-            obj-model="obj: #obj_tapis_course; mtl: #mtl_tapis_course">
-        </a-entity>
-
-        <!-- train -->
-        <a-entity 
-            position="-0.63 0.46 -2.55" scale="0.08 0.08 0.08" rotation="-90 90 -180"
-            obj-model="obj: #obj_train; mtl: #mtl_train">
-        </a-entity>
-        
-        <!-- escalier -->
-        <a-entity 
-            position="1.48 0.88 -2.085" scale="0.008 0.008 0.008" rotation="-90 0 180"
-            obj-model="obj: #obj_escalier; mtl: #mtl_escalier">
+            position="-1 0 -4.23" scale="0.01 0.01 0.01" rotation="-90 0 0"
+            obj-model="obj: #obj_lampe; mtl: #mtl_lampe">
         </a-entity>
 
         <!-- lampe -->
         <a-entity 
-            position="-1.9 0 -3.32" scale="0.01 0.01 0.01" rotation="-90 0 0"
+            position="0.5 0 -4.23" scale="0.01 0.01 0.01" rotation="-90 0 0"
             obj-model="obj: #obj_lampe; mtl: #mtl_lampe">
         </a-entity>
 
-        <!-- appareil photo -->
+        <!-- bureau -->
         <a-entity 
-            position="0.32 2.2 -2.55" scale="0.01 0.01 0.01" rotation="-65 0 -40"
-            obj-model="obj: #obj_appareil_photo; mtl: #mtl_appareil_photo">
+            position="0 0 -2.5" scale="0.01 0.01 0.01" rotation="-90 180 0"
+            obj-model="obj: #obj_bureau; mtl: #mtl_bureau">
         </a-entity>
 
-        <!-- tortue -->
+        <!-- fauteuil -->
         <a-entity 
-            position="-0.5 0.11 -1" scale="0.03 0.03 0.03" rotation="-90 0 25"
-            obj-model="obj: #obj_tortue; mtl: #mtl_tortue">
+            position="0.28 0 -3.5" scale="0.01 0.01 0.01" rotation="-90 57 0"
+            obj-model="obj: #obj_fauteuil; mtl: #mtl_fauteuil">
         </a-entity>
 
-        <!-- tortue géante -->
+        <!-- pile grande g-->
         <a-entity 
-            position="1.12 0.45 -1.4" scale="0.14 0.14 0.14" rotation="-90 0 -140"
-            obj-model="obj: #obj_tortue; mtl: #mtl_tortue">
+            position="-1.5 1.19 -3.87" rotation="0 30 0" mixin="pile_box">
         </a-entity>
-
-        <!-- poisson -->
+        <!-- pile fond d-->
         <a-entity 
-            position="1.12 1 -1.4" scale="0.5 0.5 0.5" rotation="-100 0 -120"
-            obj-model="obj: #obj_poisson; mtl: #mtl_poisson">
+            position="1.38 0.74 -4.13" rotation="0 30 0" mixin="pile_box_2">
         </a-entity>
-
-        <!-- poisson 2 -->
+        <!-- pile petite fond d-->
         <a-entity 
-            position="1.12 1.2 -1.1" scale="0.6 0.6 0.6" rotation="100 0 -120"
-            obj-model="obj: #obj_poisson; mtl: #mtl_poisson">
+            position="1.73 0.48 -3.71" rotation="0 30 0" mixin="pile_box_3">
         </a-entity>
-
-        <!-- poisson 3 -->
+        <!-- pile grande devant d-->
         <a-entity 
-            position="1.12 1.9 -1.1" scale="0.8 0.8 0.8" rotation="150 0 -90"
-            obj-model="obj: #obj_poisson; mtl: #mtl_poisson">
+            position="1.33 1.19 -1.98" rotation="0 30 0" mixin="pile_box">
+        </a-entity>
+        <!-- pile devant d-->
+        <a-entity 
+            position="1.57 0.7 -1" rotation="0 30 0" mixin="pile_box_2">
+        </a-entity>
+        <!-- pile moy devant g-->
+        <a-entity 
+            position="-1.5 0.97 -0.91" rotation="0 45 0" mixin="pile_box_4">
+        </a-entity>
+        <!-- pile moy devant d-->
+        <a-entity 
+            position="0.83 0.93 -1.34" rotation="0 100 0" mixin="pile_box_4">
+        </a-entity>
+        <!-- pile moy fond d-->
+        <a-entity 
+            position="1.48 0.96 -3.18" rotation="0 110 0" mixin="pile_box_4">
+        </a-entity>
+        <!-- pile petite fond g-->
+        <a-entity 
+            position="-1.66 0.8 -3.25" rotation="0 10 0" mixin="pile_box_5">
+        </a-entity>
+        <!-- pile petite devant g-->
+        <a-entity 
+            position="-1.65 0.8 -1.8" rotation="0 68 0" mixin="pile_box_5">
+        </a-entity>
+        <!-- pile sur bureau-->
+        <a-entity 
+            position="0.36 1.57 -2.5" rotation="0 98 0" mixin="pile_box_5">
         </a-entity>
 
 
           <!-- murs -->
+        <!-- interieurs -->
         <!-- sol -->
-        <a-entity position="0 0 -2.5" rotation="-90 0 0" mixin="mur"></a-entity>
+        <a-entity position="0 0 -2.5" rotation="-90 0 0" mixin="sol"></a-entity>
         <!-- plafond -->
-        <a-entity position="0 4 -2.5" rotation="-90 0 0" mixin="mur"></a-entity>
+        <a-entity position="0 3 -2.5" rotation="-90 0 0" mixin="plafond"></a-entity>
         <!-- gauche -->
-        <a-entity position="-2 2 -2.5" rotation="0 90 0" mixin="mur"></a-entity>
+        <a-entity position="-2 1.5 -2.5" rotation="0 90 0" mixin="mur"></a-entity>
         <!-- droite -->
-        <a-entity position="2 2 -2.5" rotation="0 90 0" mixin="mur"></a-entity>
+        <a-entity position="2 1.5 -2.5" rotation="0 270 0" mixin="mur"></a-entity>
         <!-- fond -->
-        <a-entity position="0 2 -4.5" rotation="0 0 0" mixin="mur"></a-entity>
+        <a-entity position="0 1.5 -4.5" rotation="0 0 0" mixin="mur"></a-entity>
+        <!-- exterieurs -->
+        <!-- gauche -->
+        <a-entity position="-2 1.5 -2.5" rotation="0 270 0" mixin="mur_ext"></a-entity>
+        <!-- droite -->
+        <a-entity position="2 1.5 -2.5" rotation="0 90 0" mixin="mur_ext"></a-entity>
+        <!-- fond -->
+        <a-entity position="0 1.5 -4.5" rotation="0 180 0" mixin="mur_ext"></a-entity>
 
         <!-- porte -->
-        <a-entity position="0.15 1.25 -0.84" rotation="0 -45 0" mixin="plane_porte"></a-entity>
+        <a-entity position="0.15 1.25 -0.84" rotation="0 -45 0" mixin="plane_porte" material="src:#porte"></a-entity>
+        <a-entity position="0.15 1.25 -0.84" rotation="0 -225 0" mixin="plane_porte" material="src:#porte_sens"></a-entity>
         <!-- contour de porte -->
         <a-entity position="0 1.25 -0.5" rotation="0 0 0" mixin="plane_contour_porte"></a-entity>
         <!-- murs entrée -->
-        <a-entity position="-1.31 2 -0.5" rotation="0 0 0" mixin="mur_cote"></a-entity>
-        <a-entity position="1.31 2 -0.5" rotation="0 0 0" mixin="mur_cote"></a-entity>
-        <a-entity position="0 3.25 -0.5" rotation="0 0 0" mixin="mur_haut"></a-entity>
+        <a-entity position="-1.31 1.5 -0.5" rotation="0 180 0" mixin="mur_cote"></a-entity>
+        <a-entity position="1.31 1.5 -0.5" rotation="0 180 0" mixin="mur_cote"></a-entity>
+        <a-entity position="0 2.75 -0.5" rotation="0 180 0" mixin="mur_haut"></a-entity>
+        <!-- murs exterieurs entrée -->
+        <a-entity position="-1.31 1.5 -0.5" rotation="0 0 0" mixin="mur_cote_ext"></a-entity>
+        <a-entity position="1.31 1.5 -0.5" rotation="0 0 0" mixin="mur_cote_ext"></a-entity>
+        <a-entity position="0 2.75 -0.5" rotation="0 0 0" mixin="mur_haut_ext"></a-entity>
 
         <!-- camera -->
         <a-entity camera look-controls wasd-controls="acceleration:10" position="0 1.6 0"></a-entity>
 
         <!-- ciel -->
-        <a-sky color="#ECECEC"></a-sky>
+        <a-sky color="black"></a-sky>
     </a-scene>
   </body>
 </html>
