@@ -4,3 +4,4 @@
 * [labyrinthe 1](./labyrinthe.html)
 * [labyrinthe 2](./labyrinthe_2.html)
 * [what a mess !](./bazar_obj.html)
+* [maquette éclairée](./maquette_light_1.html)
