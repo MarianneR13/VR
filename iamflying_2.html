@@ -176,30 +176,37 @@
 
         <!-- ASSETS -->
         <a-assets>
-            <!-- <img id="sky0" src="./images/puresky.jpg">
+            <img id="sky0" src="./images/puresky.jpg">
             <img id="sky1" src="./images/evening_road_01_puresky_4k.jpg">
             <img id="sky2" src="./images/sunflowers_puresky_4k.jpg">
-            <img id="sky3" src="./images/table_mountain_2_puresky_4k.jpg"> -->
-            <img id="foret" src="./images/foret_360.jpeg">
-            <!-- <img id="sky5" src="./images/herbe_360.jpeg"> -->
-            <img id="herbe_sol" src="./images/herbe.jpeg">
+            <img id="sky3" src="./images/table_mountain_2_puresky_4k.jpg">
+            <!-- <img id="foret" src="./images/foret_360.jpeg"> -->
         </a-assets>
 
         <!-- BASE -->
         <!-- <a-box position="0 0 0" color="grey"></a-box> -->
 
         <!-- DEBUT ETUDIANT -->
-        <a-sky id="image-360" radius="200" change-sky radius="10" src="#foret"></a-sky>
+        <a-sky id="image-360" radius="200" change-sky radius="10" src="#sky0"></a-sky>
         
         <a-assets>
             <a-asset-item id="arbre_chene_3" src="./assets/arbres_3.glb"></a-asset-item>
             <a-asset-item id="oiseau_orange" src="./assets/oiseau_orange.glb"></a-asset-item>
-            <a-asset-item id="oiseau_jambes" src="./assets/oiseau_jambes.glb"></a-asset-item>
+            <!-- <a-asset-item id="oiseau_jambes" src="./assets/oiseau_jambes.glb"></a-asset-item> -->
             <a-asset-item id="oiseau_groupe" src="./assets/oiseau_groupe.glb"></a-asset-item>
-            <a-asset-item id="papillon" src="./assets/papillon.glb"></a-asset-item>
+            <!-- <a-asset-item id="papillon" src="./assets/papillon.glb"></a-asset-item> -->
             <a-asset-item id="herbe" src="./assets/herbe.glb"></a-asset-item>
+            <!-- <a-asset-item id="arbre_chene_3_leger" src="./assets/test_gltf/untitled.glb"></a-asset-item> -->
+            <a-asset-item id="pierre_flottante" src="./assets/pierre.glb"></a-asset-item>
+            <a-asset-item id="pont" src="./assets/bridge.glb"></a-asset-item>
+            <a-asset-item id="banc" src="./assets/banc.glb"></a-asset-item>
+            <!-- <a-asset-item id="fleurs_jaunes" src="./assets/fleurs_jaunes.glb"></a-asset-item> -->
+            <!-- <a-asset-item id="fleurs_blanches" src="./assets/fleurs_blanches.glb"></a-asset-item> -->
+            <a-asset-item id="lapin_gris" src="./assets/lapin_gris.glb"></a-asset-item>
+            <a-asset-item id="nuage" src="./assets/nuage.glb"></a-asset-item>
         </a-assets>
 
+        <!-- Afficher un objet sans textures -->
         <!-- <a-entity
             position="0 0 0" scale="1 1 1"
             material="wireframe:true"
@@ -213,124 +220,206 @@
             animation-mixer>
         </a-entity> -->
 
-        <!-- Oiseau orange animé -->
+        <!-- Oiseau orange animé (1)-->
         <a-entity 
             position="-0.004 3.201 0.891" rotation="0 -90 0" scale="0.15 0.15 0.15"
             gltf-model="#oiseau_orange"
             animation-mixer>
         </a-entity>
 
-        <!-- Oiseau orange animé -->
-        <a-entity 
-            position="-8.3 6.25 -1" rotation="0 -90 0" scale="0.15 0.15 0.15"
-            gltf-model="#oiseau_orange"
-            animation-mixer>
-        </a-entity>
-
-        <!-- Oiseau orange animé -->
+        <!-- Oiseau orange animé (1)-->
         <a-entity 
             position="-0.9 3.58 -0.7" rotation="0 30 10" scale="0.15 0.15 0.15"
             gltf-model="#oiseau_orange"
             animation-mixer>
         </a-entity>
 
-        <!-- Oiseau orange animé -->
+        <!-- Oiseau orange animé (2)-->
         <a-entity 
-            position="-2 0 -4" scale="0.3 0.3 0.3"
+            position="-14.118 19.998 10.401" rotation="-1.081 -134.1 -7.525" scale="0.15 0.15 0.15"
             gltf-model="#oiseau_orange"
             animation-mixer>
         </a-entity>
 
-        <!-- Herbe -->
+        <!-- Pierre Flottante (début 1)-->
         <a-entity 
-            position="-8.2 -0 -2.4" rotation="0 -90 0"scale="0.05 0.05 0.05"
-            gltf-model="#herbe">
+            position="-4 -0.4 2" rotation="15 36 -166" scale="3 3 3"
+            gltf-model="#pierre_flottante">
         </a-entity>
 
-        <!-- Herbe -->
+        <!-- Pierre Flottante (haut gauche 2)-->
         <a-entity 
-            position="5 0 2" rotation="0 0 0"scale="0.05 0.05 0.05"
-            gltf-model="#herbe">
+            position="-18.25 19.9 14" rotation="75.4 -165 47.7" scale="3 3 3"
+            gltf-model="#pierre_flottante">
         </a-entity>
 
-        <!-- Herbe -->
+        <!-- Pierre Flottante (haut derrière 3)-->
         <a-entity 
-            position="-1 0 -2.9" rotation="0 -56 0" scale="0.05 0.05 0.05"
-            gltf-model="#herbe">
+            position="26.94 14.438 30.49" rotation="26.18 36.709 103.51" scale="2.6 2.6 2.6"
+            gltf-model="#pierre_flottante">
+        </a-entity>
+
+        <!-- Pierre Flottante (haut derrière 4)-->
+        <a-entity 
+            position="21.703 10.48 48.616" rotation="-62.08 -128.6 132.21" scale="5 5 5"
+            gltf-model="#pierre_flottante">
+        </a-entity>
+
+        <!-- Pierre Flottante (bas derrière 5)-->
+        <a-entity 
+            position="26.183 -16.06 -9.766" rotation="30.185 22.45 30.43" scale="4 4 4"
+            gltf-model="#pierre_flottante">
+        </a-entity>
+
+        <!-- Pierre Flottante (bas droite 6)-->
+        <a-entity 
+            position="0.375 -46.92 -37.58" rotation="-2.942 38.512 -142.7" scale="2.5 2.5 2.5"
+            gltf-model="#pierre_flottante">
+        </a-entity>
+
+        <!-- Pierre Flottante (bas droite 7)-->
+        <a-entity 
+            position="-4 -52.19 -39.49" rotation="-51 119.88 -44.89" scale="3 3 3"
+            gltf-model="#pierre_flottante">
+        </a-entity>
+
+        <!-- Pierre Flottante (bas gauche 8)-->
+        <a-entity 
+            position="-29 -26.27 52.8" rotation="67.6n28.57 -13.77" scale="3 3 3"
+            gltf-model="#pierre_flottante">
+        </a-entity>
+
+        <!-- Banc (2)-->
+        <a-entity 
+            position="-14.27 18.7 10.05" rotation="0.069 -123.7 4.447" scale="0.01 0.01 0.01"
+            gltf-model="#banc">
+        </a-entity>
+
+        <!-- Fleurs jaunes (2) -->
+        <!-- <a-entity 
+            position="-14.87 18.582 11.269" rotation="6.006 -123.1 -2.98" scale="0.01 0.01 0.01"
+            gltf-model="#fleurs_jaunes">
+        </a-entity> -->
+
+        <!-- Fleurs blanches (7)-->
+        <!-- <a-entity 
+            position="-1.867 -45.32 -38.47" rotation="-11.173 99.126 -11.05" scale="2 2 2"
+            gltf-model="#fleurs_blanches">
+        </a-entity> -->
+
+        <!-- Pont (3-4)-->
+        <a-entity 
+            position="21.307 12.447 35.4" rotation="0 -65.76 0"scale="0.7 0.7 0.7"
+            gltf-model="#pont">
         </a-entity>
         
-        <!-- Herbe -->
+        <!-- Herbe (1)-->
         <a-entity 
-            position="-0.5 0 0" rotation="0 123 0" scale="0.05 0.05 0.05"
+            position="-0.7 -0.3 2.3" rotation="-27 106 -13" scale="0.05 0.05 0.05"
             gltf-model="#herbe">
         </a-entity>
 
-        <!-- Herbe -->
+        <!-- Herbe (7)-->
         <a-entity 
-            position="-8.6 0 0" rotation="0 30 0" scale="0.05 0.05 0.05"
+            position="-5.637 -46.63 -40.35" rotation="-11.173 99.126 -11.05" scale="0.05 0.05 0.05"
             gltf-model="#herbe">
         </a-entity>
 
-        <!-- Herbe -->
+        <!-- Herbe pour cacher bas petit arbre (7)-->
         <a-entity 
-            position="-5.2 0 3.2" rotation="0 70 0" scale="0.05 0.05 0.05"
+            position="-4.152 -47.45 -36.99" rotation="-13.89 93.769 13.271" scale="0.05 0.05 0.05"
             gltf-model="#herbe">
         </a-entity>
 
-        <!-- 3 arbres -->
+        <!-- Nuage (6-7)-->
+        <!-- <a-entity 
+            position="3.568 -47.82 -33.07" rotation="-12.99 -6.488 3.005" scale="1 1 1"
+            gltf-model="#nuage">
+        </a-entity> -->
+
+        <!-- Lapin gris (6)-->
+        <a-entity 
+            position="4.343 -44.39 -35.73" rotation="-7.358 88.93 0.92" scale="0.05 0.05 0.05"
+            gltf-model="#lapin_gris"
+            animation-mixer>
+        </a-entity>
+
+        <!-- 3 arbres moins lourds -->
+        <!-- <a-entity 
+            position="0 0 0" scale="5 5 5"
+            gltf-model="#arbre_chene_3_leger">
+        </a-entity> -->
+
+        <!-- 3 arbres (1)-->
         <a-entity 
             position="0 0 0" scale="5 5 5"
             gltf-model="#arbre_chene_3">
         </a-entity>
 
-        <!-- 3 arbres -->
+        <!-- 3 arbres (2)-->
         <a-entity 
-            position="-0.5 0 -4.1" rotation="0 65 0" scale="5 5 5"
+            position="-14.29 18.45 15.7" rotation="0 -122.6 0" scale="5 5 5"
             gltf-model="#arbre_chene_3">
         </a-entity>
 
-        <!-- 3 arbres -->
+        <!-- 3 arbres (4)-->
         <a-entity 
-            position="-8.5 0 -3" rotation="0 100 0" scale="5 5 5"
+            position="13.086 16.859 43.55" rotation="0 36.745 0" scale="3.9 3.9 3.9"
             gltf-model="#arbre_chene_3">
         </a-entity>
 
-        <!-- 3 arbres -->
+        <!-- 3 arbres (7)-->
         <a-entity 
-            position="4.8 0 1.3" rotation="0 200 0" scale="5 5 5"
+            position="-5.63 -46.26 -41.06" rotation="-2.71 55.9 3.625" scale="5 5 5"
             gltf-model="#arbre_chene_3">
         </a-entity>
 
         <!-- Animation papillon -->
-        <a-sphere position="0 2 -4" radius="2" color="white" opacity="0"
+        <!-- <a-sphere position="0 2 -4" radius="2" color="white" opacity="0"
         animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000;">
         <a-entity 
             position="2 0 1.4" rotation="0 -90 0" scale="0.6 0.6 0.6"
             gltf-model="#papillon"
             animation-mixer>
         </a-entity>
-        </a-sphere>
+        </a-sphere> -->
 
-        <!-- Animation groupe oiseaux -->
-        <a-sphere position="0 2 -4" radius="2" color="white" opacity="0"
+        <!-- Animation groupe oiseaux (2)-->
+        <!-- <a-sphere position="-14.83 22.2 14.57" radius="2" color="white" opacity="0"
         animation="property: rotation; from: 0 0 0; to: 0 360 0; loop: true; dur: 10000;">
         <a-entity 
             position="2 5.3 -3" rotation="0 45 0" scale="1 1 1"
             gltf-model="#oiseau_groupe"
             animation-mixer>
         </a-entity>
-        </a-sphere>
+        </a-sphere> -->
+        <!-- Animation groupe oiseaux test 2e animation (2)-->
+        <a-entity id="rotatingsphere" position="0 0 0"
+            animation="property: rotation; from: 0 0 0; to: 0 360 0; dur: 5000; loop: true; easing: linear">
+            <a-entity 
+            position="2 5.3 -3" rotation="0 45 0" scale="1 1 1"
+            gltf-model="#oiseau_groupe"
+            animation-mixer>
+            </a-entity>
+        </a-entity>
 
-        <!-- Herbe -->
-        <a-plane position="-1,5 0 0" rotation="-90 0 0" width="18" height="10" src="#herbe_sol" repeat="9 9"></a-plane>
+        <!-- Animation nuage (6-7) -->
+        <!-- <a-entity 
+            position="-35.38 -41.09 -42.7" rotation="-12.99 -6.488 3.005" scale="3 3 3"
+            gltf-model="#nuage"
+            animation="property: position; from: -35.38 -41.09 -42.7; to: 46.85 -41.51 -42.08; loop: true; dur: 10000; dir: alternate; easing: linear">
+        </a-entity> -->
 
         <!-- FIN ETUDIANT -->
 
         <!-- PLAYER -->
-        <a-entity id="player" position="-0.8 3.6 -0.5" fly="scalaire: 0.1 0.1 0.1; trace: true">
+        <a-entity id="player" position="-0.8 3.6 -0.5" fly="scalaire: 0.1 0.1 0.1; trace: true"> 
+        <!-- <a-entity id="player" position="-18.25 22 14" fly="scalaire: 0.1 0.1 0.1; trace: true">  -->
+        <!-- <a-entity id="player" position="26.64 16 32.215" fly="scalaire: 0.1 0.1 0.1; trace: true">  -->
+        <!-- <a-entity id="player" position="-4 -43 -39.49" fly="scalaire: 0.1 0.1 0.1; trace: true">  -->
             <a-entity id="cam" camera position="0 0 0" 
                 currentposition="trace:false" 
-                look-controls wasd-controls="acceleration:5">
+                look-controls wasd-controls="acceleration:10">
                 <a-entity id="lefthand" position="0 0.5 0" handposition="trace: false" oculus-touch-controls="hand: left"></a-entity>
                 <a-entity id="righthand" position="0 0.5 0" handposition="trace: false" oculus-touch-controls="hand: right" droite></a-entity>
                 <a-text id="txtlog" value="" align="center" color="#FF0000" 
