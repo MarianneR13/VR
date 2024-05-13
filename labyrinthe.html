@@ -10,6 +10,7 @@
       <a-assets>
         <img id="sol" src="./moquette.jpg">
         <img id="mur" src="./papier_peint.jpg">
+        <img id="nuage" src="./nuage.png">
       </a-assets>
 
       <!-- face -->
@@ -242,6 +243,13 @@
                src="#mur" repeat="1 2">
       </a-plane> 
 
+      <a-plane position="1.5 1 -3" 
+               rotation="0 0 0" 
+               width="1" height="2" 
+               side="double"
+               src="#nuage" transparent="true" repeat="1 2">
+      </a-plane> 
+
       <!-- sol -->
       <a-plane position="0 0 0" 
                rotation="-90 0 0" 
@@ -249,6 +257,7 @@
                src="#sol" repeat="4 4"></a-plane>>
       </a-plane>
 
+      <!-- plafond -->
       <a-plane position="0 2 0" 
                rotation="-90 0 0" 
                width="4" height="4" 
