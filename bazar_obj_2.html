@@ -1,0 +1,315 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+        <a-assets>
+            <!-- MIXINS -->
+            <!-- mixins murs -->
+            <a-mixin id="mur" geometry="primitive: plane; height: 3; width: 4" material="src: #papier_peint_bordeaux; repeat: 4 4" ></a-mixin>
+            <a-mixin id="mur_ext" geometry="primitive: plane; height: 3; width: 4" material="color:#480b0b" ></a-mixin>
+            <!-- mixins sol -->
+            <a-mixin id="sol" geometry="primitive: plane; height: 4; width: 4" material="side:double; src: #parquet; repeat:4 4" ></a-mixin>
+            <!-- mixins plafond -->
+            <a-mixin id="plafond" geometry="primitive: plane; height: 4; width: 4" material="side:double; src: #plafond_img" ></a-mixin>
+            <!-- mixins murs porte -->
+            <a-mixin id="mur_cote" geometry="primitive: plane; height: 3; width: 1.375" material="src: #papier_peint_bordeaux; repeat: 1 4" ></a-mixin>
+            <a-mixin id="mur_haut" geometry="primitive: plane; height: 0.5; width: 1.25" material="src: #papier_peint_bordeaux; repeat: 1 0.6" ></a-mixin>
+            <a-mixin id="mur_cote_ext" geometry="primitive: plane; height: 3; width: 1.375" material="color:#480b0b; repeat: 1 1.375" ></a-mixin>
+            <a-mixin id="mur_haut_ext" geometry="primitive: plane; height: 0.5; width: 1.25" material="color:#480b0b; repeat: 1 0.5" ></a-mixin>
+
+            <!-- MODELES 3D -->
+            <!-- lampe -->
+            <a-asset-item id="obj_lampe" src="./modeles/bazar/lampe/11832_Lamp_v1_l2.obj"></a-asset-item>
+            <a-asset-item id="mtl_lampe" src="./modeles/bazar/lampe/11832_Lamp_v1_l2.mtl"></a-asset-item>
+
+            <!-- bureau -->
+            <a-asset-item id="obj_bureau" src="./modeles/bazar/bureau/10240_Office_Desk_v3_max2011.obj"></a-asset-item>
+            <a-asset-item id="mtl_bureau" src="./modeles/bazar/bureau/10240_Office_Desk_v3_max2011.mtl"></a-asset-item>
+
+            <!-- fauteuil -->
+            <a-asset-item id="obj_fauteuil" src="./modeles/bazar/fauteuil/12283_Chair_v1_L3.obj"></a-asset-item>
+            <a-asset-item id="mtl_fauteuil" src="./modeles/bazar/fauteuil/12283_Chair_v1_L3.mtl"></a-asset-item>
+
+            <!-- lampe vintage -->
+            <a-asset-item id="glb_lampe_vintage" src="./modeles/bazar/lampe_vintage.glb"></a-asset-item>
+
+            <!-- pile de livres 1 -->
+            <a-asset-item id="glb_pile_livres_1" src="./modeles/bazar/pile_livres_1.glb"></a-asset-item>
+
+            <!-- porte en bois -->
+            <a-asset-item id="glb_porte" src="./modeles/bazar/porte_bois.glb"></a-asset-item>
+
+            <!-- lustre -->
+            <a-asset-item id="glb_lustre" src="./modeles/bazar/lustre.glb"></a-asset-item>
+
+            <!-- fenetre -->
+            <a-asset-item id="glb_fenetre" src="./modeles/bazar/fenetre_ouverte.glb"></a-asset-item>
+
+            <!-- etagere de livres -->
+            <a-asset-item id="glb_etagere" src="./modeles/bazar/etagere.glb"></a-asset-item>
+
+            <!-- chaise Morris -->
+            <a-asset-item id="glb_chaise_morris" src="./modeles/bazar/chaise_morris.glb"></a-asset-item>
+
+            <!-- etagere de livres 2 -->
+            <a-asset-item id="glb_etagere_2" src="./modeles/bazar/petite_etagere.glb"></a-asset-item>
+            
+            <!-- meuble à tiroirs -->
+            <a-asset-item id="glb_meuble_tiroirs" src="./modeles/bazar/meuble_tiroirs.glb"></a-asset-item>
+
+            <!-- billets -->
+            <a-asset-item id="glb_billets" src="./modeles/bazar/billets.glb"></a-asset-item>
+
+            <!-- coffre 1 -->
+            <a-asset-item id="glb_coffre_1" src="./modeles/bazar/coffre_1.glb"></a-asset-item>
+
+            <!-- liasse billets -->
+            <a-asset-item id="glb_liasse_billets" src="./modeles/bazar/liasse_billets.glb"></a-asset-item>
+
+            <!-- livre ouvert -->
+            <a-asset-item id="glb_livre_ouvert" src="./modeles/bazar/livre_ouvert.glb"></a-asset-item>
+
+            <!-- livre 1 -->
+            <a-asset-item id="glb_livre_1" src="./modeles/bazar/livre_1.glb"></a-asset-item>
+
+            <!-- livre 2 -->
+            <a-asset-item id="glb_livre_2" src="./modeles/bazar/livre_2.glb"></a-asset-item>
+            
+            <!-- plante -->
+            <a-asset-item id="glb_plante" src="./modeles/bazar/plante.glb"></a-asset-item>
+
+            <!-- IMAGES -->
+            <!-- image bibliotheque -->
+            <img id="img_bibliotheque" src="./modeles/bazar/bibliotheque_2.jpg">
+
+            <!-- image papier peint bordeaux -->
+            <img id="papier_peint_bordeaux" src="./modeles/bazar/papier_peint_1.jpg">
+
+            <!-- image plafond -->
+            <img id="plafond_img" src="./modeles/bazar/plafond.jpeg">
+
+            <!-- image parquet -->
+            <img id="parquet" src="./modeles/bazar/parquet.webp">
+        </a-assets>
+
+
+        <!-- lampe -->
+        <a-entity 
+            position="-1 0.19 -4.23" scale="0.01 0.01 0.01" rotation="-55.8 90 -90"
+            obj-model="obj: #obj_lampe; mtl: #mtl_lampe">
+        </a-entity>
+
+        <!-- lampe -->
+        <a-entity 
+            position="0.5 0 -4.23" scale="0.01 0.01 0.01" rotation="-90 0 0"
+            obj-model="obj: #obj_lampe; mtl: #mtl_lampe">
+        </a-entity>
+
+        <!-- bureau -->
+        <a-entity 
+            position="0.12 0 -2.53" scale="0.01 0.01 0.01" rotation="-90 -164 0"
+            obj-model="obj: #obj_bureau; mtl: #mtl_bureau">
+        </a-entity>
+
+        <!-- fauteuil -->
+        <a-entity 
+            position="-0.26 0.26 -3.39" scale="0.01 0.01 0.01" rotation="-5.73 -114.84 179.72"
+            obj-model="obj: #obj_fauteuil; mtl: #mtl_fauteuil">
+        </a-entity>
+
+        <!-- lampe vintage -->
+        <a-entity 
+            position="-0.45 1.036 -2.27" scale="0.27 0.27 0.27" rotation="0 130 0"
+            gltf-model="#glb_lampe_vintage">
+        </a-entity>
+
+        <!-- pile de livres 1 -->
+        <a-entity 
+            position="0.62 0.87 -2.53" scale="0.2 0.2 0.2" rotation="0 20 0"
+            gltf-model="#glb_pile_livres_1">
+        </a-entity>
+
+        <!-- pile de livres 1 -->
+        <a-entity 
+            position="0.62 0.87 -2.87" scale="0.2 0.2 0.2" rotation="0 98 0"
+            gltf-model="#glb_pile_livres_1">
+        </a-entity>
+
+        <!-- pile de livres 1 -->
+        <a-entity 
+            position="0.62 1.114 -2.72" scale="0.2 0.2 0.2" rotation="0 49.7 0"
+            gltf-model="#glb_pile_livres_1">
+        </a-entity>
+
+        <!-- vieille porte (modele 3D) -->
+        <a-entity 
+            position="0 0 -0.51" scale="0.21 0.21 0.21" rotation="0 0 0"
+            gltf-model="#glb_porte">
+        </a-entity>
+
+        <!-- lustre -->
+        <a-entity 
+            position="0 2.19 -2.39" scale="0.02 0.02 0.02" rotation="0 0 0"
+            gltf-model="#glb_lustre">
+        </a-entity>
+
+        <!-- fenetre -->
+        <!-- <a-entity 
+            position="-0.021 1.06 -4.5" scale="0.15 0.15 0.15" rotation="0 0 0"
+            gltf-model="#glb_fenetre">
+        </a-entity> -->
+
+        <!-- etagere de livres (modele 3D) -->
+        <a-entity 
+            position="-1.58 0 -2.48" scale="1 1 1" rotation="0 0 0"
+            gltf-model="#glb_etagere">
+        </a-entity>
+
+        <!-- chaise Morris -->
+        <a-entity 
+            position="1.4 0.2 -1.12" scale="1 1 1" rotation="0 178 0"
+            gltf-model="#glb_chaise_morris">
+        </a-entity>
+
+        <!-- meuble à tiroirs -->
+        <a-entity 
+            position="0 0 -4.25" scale="0.15 0.15 0.15" rotation="0 90 0"
+            gltf-model="#glb_meuble_tiroirs">
+        </a-entity>
+
+        <!-- etagere à livres 2 -->
+        <a-entity 
+            position="1.46 0 -3.48" scale="1 1 1" rotation="0 162 0"
+            gltf-model="#glb_etagere_2">
+        </a-entity>
+
+        <!-- coffre 1 -->
+        <a-entity 
+            position="1.68 0 -4.16" scale="0.01 0.01 0.01" rotation="0 -90 0"
+            gltf-model="#glb_coffre_1">
+        </a-entity>
+
+        <!-- billets -->
+        <a-entity 
+            position="-0.58 0 -1" scale="1 1 1" rotation="0 37 0"
+            gltf-model="#glb_billets">
+        </a-entity>
+
+        <!-- billets -->
+        <a-entity 
+            position="-0.9 0 -2" scale="1 1 1" rotation="0 -68 0"
+            gltf-model="#glb_billets">
+        </a-entity>
+
+        <!-- liasse billets -->
+        <a-entity 
+            position="1.4 0.04 -4.29" scale="0.01 0.01 0.01" rotation="10.3 -21,9 23.88"
+            gltf-model="#glb_liasse_billets">
+        </a-entity>
+
+        <!-- liasse billets -->
+        <a-entity 
+            position="0.8 0 -3.8" scale="0.01 0.01 0.01" rotation="0 98 0"
+            gltf-model="#glb_liasse_billets">
+        </a-entity>
+
+        <!-- livre ouvert -->
+        <a-entity 
+            position="-0.22 0.74 -2.64" scale="1 1 1" rotation="0.48 -107 -87.5"
+            gltf-model="#glb_livre_ouvert">
+        </a-entity>
+
+        <!-- livre ouvert -->
+        <a-entity 
+            position="0.08 0.76 -2.64" scale="1 1 1" rotation="-6.586 -49.065 -91.655"
+            gltf-model="#glb_livre_ouvert">
+        </a-entity>
+
+        <!-- livre ouvert -->
+        <a-entity 
+            position="-0.055 0.791 -2.345" scale="1 1 1" rotation="6.479 -70.494 -103.885"
+            gltf-model="#glb_livre_ouvert">
+        </a-entity>
+
+        <!-- livre 1 (sol etagere droite)-->
+        <a-entity 
+            position="1.55 0 -3.07" scale="0.0015 0.0015 0.0015" rotation="0 122 0"
+            gltf-model="#glb_livre_1">
+        </a-entity>
+
+        <!-- livre 1 -->
+        <a-entity 
+            position="0.6 0.01 -2.02" scale="0.0015 0.0015 0.0015" rotation="0.686 -140.383 0.84"
+            gltf-model="#glb_livre_1">
+        </a-entity>
+
+        <!-- livre 1 -->
+        <a-entity 
+            position="0.29 0 -1.89" scale="0.0015 0.0015 0.0015" rotation="0 -6.6 0"
+            gltf-model="#glb_livre_1">
+        </a-entity>
+
+        <!-- livre 2 -->
+        <a-entity 
+            position="1.416 0 -3.2" scale="0.12 0.12 0.12" rotation="79.3 9.68 -31.4"
+            gltf-model="#glb_livre_2">
+        </a-entity>
+
+        <!-- livre 2 -->
+        <a-entity 
+            position="0.77 0 -2.1" scale="0.12 0.12 0.12" rotation="79.3 -74.2 -31.4"
+            gltf-model="#glb_livre_2">
+        </a-entity>
+
+        <!-- livre 2 -->
+        <a-entity 
+            position="0.94 0.05 -1.62" scale="0.12 0.12 0.12" rotation="60.5 22.6 -47"
+            gltf-model="#glb_livre_2">
+        </a-entity>
+
+        <!-- plante -->
+        <a-entity 
+            position="-0.75 0.13 -0.82" scale="1 1 1" rotation="-65 -60 87.08"
+            gltf-model="#glb_plante">
+        </a-entity>
+
+          <!-- murs -->
+        <!-- interieurs -->
+        <!-- sol -->
+        <a-entity position="0 0 -2.5" rotation="-90 0 0" mixin="sol"></a-entity>
+        <!-- plafond -->
+        <a-entity position="0 3 -2.5" rotation="-90 0 0" mixin="plafond"></a-entity>
+        <!-- gauche -->
+        <a-entity position="-2 1.5 -2.5" rotation="0 90 0" mixin="mur"></a-entity>
+        <!-- droite -->
+        <a-entity position="2 1.5 -2.5" rotation="0 270 0" mixin="mur"></a-entity>
+        <!-- fond -->
+        <a-entity position="0 1.5 -4.5" rotation="0 0 0" mixin="mur"></a-entity>
+        <!-- exterieurs -->
+        <!-- gauche -->
+        <a-entity position="-2 1.5 -2.5" rotation="0 270 0" mixin="mur_ext"></a-entity>
+        <!-- droite -->
+        <a-entity position="2 1.5 -2.5" rotation="0 90 0" mixin="mur_ext"></a-entity>
+        <!-- fond -->
+        <a-entity position="0 1.5 -4.5" rotation="0 180 0" mixin="mur_ext"></a-entity>
+
+        <!-- murs entrée -->
+        <a-entity position="-1.31 1.5 -0.5" rotation="0 180 0" mixin="mur_cote"></a-entity>
+        <a-entity position="1.31 1.5 -0.5" rotation="0 180 0" mixin="mur_cote"></a-entity>
+        <a-entity position="0 2.75 -0.5" rotation="0 180 0" mixin="mur_haut"></a-entity>
+        <!-- murs exterieurs entrée -->
+        <a-entity position="-1.31 1.5 -0.5" rotation="0 0 0" mixin="mur_cote_ext"></a-entity>
+        <a-entity position="1.31 1.5 -0.5" rotation="0 0 0" mixin="mur_cote_ext"></a-entity>
+        <a-entity position="0 2.75 -0.5" rotation="0 0 0" mixin="mur_haut_ext"></a-entity>
+
+        <!-- camera -->
+        <a-entity camera look-controls wasd-controls="acceleration:10" position="0 1.6 0"></a-entity>
+
+        <!-- ciel -->
+        <a-sky color="black"></a-sky>
+    </a-scene>
+  </body>
+</html>
