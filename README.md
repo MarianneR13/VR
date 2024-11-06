@@ -9,5 +9,5 @@
 
 # AR
 
-* [marker_3_patterns](./AR/marker_3_patterns.html)
-* [pattern ski](./AR/pattern-ski.png)
+* [marker_3_patterns](./AR/assets/patterns/marker_3_patterns.html)
+* [pattern ski](./AR/assets/images/pattern-ski.png)
