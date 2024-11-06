@@ -6,3 +6,8 @@
 * [what a mess !](./bazar_obj_2.html)
 * [maquette éclairée](./maquette_light_1.html)
 * [voler](./iamflying_2.html)
+
+# AR
+
+* [marker_3_patterns](./AR/marker_3_patterns.html)
+* [pattern ski](./AR/pattern-ski.png)
