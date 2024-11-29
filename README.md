@@ -6,7 +6,6 @@
 * [what a mess !](./bazar_obj_2.html)
 * [maquette éclairée](./maquette_light_1.html)
 * [voler](./iamflying_2.html)
-  
 * [skybox](./skybox/skybox.html)
 
 # AR
